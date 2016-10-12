@@ -10,7 +10,11 @@ More details can be found on the [official](http://ekylibre.com/en) [websites](h
 
 ## Code status
 
-`// TODO`
+[![Coverage Status](https://coveralls.io/repos/github/Aquaj/osmosis/badge.svg?branch=master)](https://coveralls.io/github/Aquaj/osmosis?branch=master)
+[![Build Status]https://travis-ci.org/Aquaj/osmosis.svg?branch=master!:https://travis-ci.org/Aquaj/osmosis](https://travis-ci.org/Aquaj/osmosis)
+[![Dependency Status](https://gemnasium.com/badges/github.com/Aquaj/osmosis.svg)](https://gemnasium.com/github.com/Aquaj/osmosis)
+[![Code Climate](https://codeclimate.com/github/Aquaj/osmosis/badges/gpa.svg)](https://codeclimate.com/github/Aquaj/osmosis)
+
 
 ## What is it ?
 Osmosis is a fork of Ekylibre created and as-of-now worked on by a software engineer from Ekylibre's team.
