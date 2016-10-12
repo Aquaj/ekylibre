@@ -1,4 +1,4 @@
-# Ekylibre - Bringing back balance between
+# Ekylibre - Bringing back balance between farming work and administrative work in the agricultural world.
 
 Ekylibre is a management application for the agricultural world that's fully-oriented around the core concepts of Open-Source development.
 It's built using Ruby on Rails and uses a PostgreSQL/PostGIS stack.
@@ -6,7 +6,7 @@ More details can be found on the [official](http://ekylibre.com/en) [websites](h
 
 [![Screens](https://raw.github.com/ekylibre/ekylibre/2-0-stable/doc/screenshots/screens.jpg)](https://raw.github.com/ekylibre/ekylibre/2-0-stable/doc/screenshots/screens.png)
 
-# Osmosis
+# Osmosis - Bringing back balance between new developments and maintenance development in Ekylibre.
 
 ## Code status
 
