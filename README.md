@@ -1,63 +1,37 @@
-# Ekylibre
+# Ekylibre - Bringing back balance between farming work and administrative work in the agricultural world.
 
-[![Join the chat at https://gitter.im/ekylibre/ekylibre](https://badges.gitter.im/ekylibre/ekylibre.svg)](https://gitter.im/ekylibre/ekylibre?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Ekylibre is a simple enterprise management web application for farmers and small enterprises.
-Ekylibre is written with Ruby on Rails framework and use PostgreSQL/PostGIS stack.
-More details can be found on the official website http://ekylibre.org.
-
-## Code status
-
-[![Build Status](https://api.travis-ci.org/ekylibre/ekylibre.svg?branch=2-0-stable)](https://travis-ci.org/ekylibre/ekylibre)
-[![Gem Dependency Status](https://gemnasium.com/ekylibre/ekylibre.svg)](https://gemnasium.com/ekylibre/ekylibre)
-[![Code Metrics](https://codeclimate.com/github/ekylibre/ekylibre.svg)](https://codeclimate.com/github/ekylibre/ekylibre)
-[![Code Coverage](https://coveralls.io/repos/github/ekylibre/ekylibre/badge.svg?branch=2-0-stable)](https://coveralls.io/r/ekylibre/ekylibre)
-
-## Guides
-
-You can learn how to contribute in Ekylibre by following our official guide:
-
-* [Guide (Français)](https://github.com/ekylibre/ekylibre/wiki/Une-semaine-en-Ekylibre)
-
-## Screenshot
+Ekylibre is a management application for the agricultural world that's fully-oriented around the core concepts of Open-Source development.
+It's built using Ruby on Rails and uses a PostgreSQL/PostGIS stack.
+More details can be found on the [official](http://ekylibre.com/en) [websites](http://ekylibre.org/en) and on the [official GitHub repository](http://github.com/ekylibre/ekylibre).
 
 [![Screens](https://raw.github.com/ekylibre/ekylibre/2-0-stable/doc/screenshots/screens.jpg)](https://raw.github.com/ekylibre/ekylibre/2-0-stable/doc/screenshots/screens.png)
 
+# Osmosis - Bringing back balance between new developments and maintenance development in Ekylibre.
+
+## Code status
+
+[![Coverage Status](https://coveralls.io/repos/github/Aquaj/osmosis/badge.svg?branch=master)](https://coveralls.io/github/Aquaj/osmosis?branch=master)
+[![Build Status](https://travis-ci.org/Aquaj/osmosis.svg?branch=master!:https://travis-ci.org/Aquaj/osmosis)](https://travis-ci.org/Aquaj/osmosis)
+[![Dependency Status](https://gemnasium.com/badges/github.com/Aquaj/osmosis.svg)](https://gemnasium.com/github.com/Aquaj/osmosis)
+[![Code Climate](https://codeclimate.com/github/Aquaj/osmosis/badges/gpa.svg)](https://codeclimate.com/github/Aquaj/osmosis)
+
+
+## What is it ?
+Osmosis is a fork of Ekylibre created and as-of-now worked on by a software engineer from Ekylibre's team.
+Its goal is to clean and debloat the original project of all the growth pains that have piled up throughout the years.
+
+## Why through a fork instead of the original repo ?
+Osmosis is a fork of Ekylibre so there can be as much tinkering and radical changes inside the project without cluttering the branches or slowing down the ongoing developments going on on the root repo.
+It is also to better represent that this cleaning-up is a 'side-task' that moves on at its own pace (not to say it cannot be a breakneck one), separated from the timeline of Ekylibre.
+
+If something comes out of it: good. If not: too bad but we won't fret over it.
+
+## I wanna contribute !
+
+Come on board! You can start by checking out our [contributing guidelines](http://github.com/Aquaj/osmosis/CONTRIBUTING.md)!
+
 ## Installation
 
-This installation method works with Debian-like OS (Debian, Ubuntu, Linux Mint...):
+As of now, you can just follow Ekylibre's [installation guide](https://github.com/ekylibre/ekylibre/#installation).
 
-* [English](https://github.com/ekylibre/ekylibre/blob/2-0-stable/doc/guides/installation.md) ([for Debian Jessie](https://github.com/ekylibre/ekylibre/blob/2-0-stable/doc/guides/installation-debian-jessie.md))
-* [Français](https://wiki.ekylibre.com/fr/guides/installation)
-
-Ekylibre depends on PostgreSQL (≥ 9.5) and PostGIS (≥ 2.2).
-
-## Contributing
-
-We encourage you to contribute to Ekylibre.
-
-* See our conventions ([Français](https://github.com/ekylibre/ekylibre/wiki/Conventions-de-d%C3%A9veloppement))
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so we don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so we can cherry-pick around it.
-
-## See also
-
-* [Forum](http://forum.ekylibre.org)
-* [Documentation](http://wiki.ekylibre.org)
-* [Demo](http://demo.ekylibre.org)
-
-## Follow us
-
-* [Twitter](https://twitter.com/Ekylibre)
-* [Facebook](https://www.facebook.com/ekylibre)
-* [Google+](https://plus.google.com/106303796269953490281/about)
-* [YouTube](http://www.youtube.com/channel/UC_yYJGkq-aqC-So8DlXtM5g)
-
-## License
-
-Ekylibre is released under the [GNU/AGPLv3](http://opensource.org/licenses/AGPL-3.0) license.
+This part will be updated as developments go.
