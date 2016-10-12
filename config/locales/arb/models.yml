@@ -649,6 +649,7 @@ arb:
         wrong_length: "%{attribute} الطول الخاطئ  ( %{count} يجب ان يكون عدد الاحرف)"
       models:
         activity:
+          checked_off_with_inspections: "وقد تم بالفعل خلق التفتيش لهذا النشاط"
           checked_without_measures: "على الأقل، يجب أن يتم اختيار نوع واحد الاجراء عندما أراد التفتيش"
         bank_statement:
           no_cash_match_ofx: "لم يتم العثور على رقم الحساب المصرفي الواردة في الملف النقدية"
@@ -912,6 +913,7 @@ arb:
       product_nature_variant_reading: "نوع المنتج البديل القراءة"
       product_ownership: "ملكية المنتج"
       product_phase: "مرحلة المنتج"
+      product_population: "السكان المنتج"
       product_price_listing: "فئة الفرد" #?
       product_price_template: "الاسعار" #?
       product_reading: "قراءة المنتج"
@@ -1076,6 +1078,7 @@ arb:
     cache: "مخبأ" #?
     calibrations: "المعايرة"
     campaign: "حملة"
+    campaigns: "حملات"
     canal: "قناة"
     cap_islet: "كاب جزيرة"
     cap_islets: "الجزر كاب"
@@ -1125,6 +1128,7 @@ arb:
     clusters_work_number: "مجموعات العمل رقم"
     code: "الرمز"
     code2: "الرمز الثاني" #?
+    codes: "رموز"
     coefficient: "الدرجة"
     collect_account: "جمع الحساب"
     collected_account: "جمع قيمة الضريبة الاضافية" #?
@@ -1455,12 +1459,17 @@ arb:
     grading_sizes_unit_name: "الدرجات أحجام اسم الوحدة"
     gradings: "الى التصنيف"
     gravity: "الجاذبية"
-    gross_items: "العد الإجمالي"
-    gross_mass: "الكتلة الإجمالية"
+    gross_items: "العد الإجمالي" #?
+    gross_items_count: "البنود الإجمالية تحسب"
+    gross_items_count_yield: "العائد الإجمالي البند"
+    gross_mass: "الكتلة الإجمالية" #?
+    gross_net_mass: "الكتلة الإجمالية"
+    gross_net_mass_yield: "العائد الإجمالي الشامل"
     gross_yield_value: "القيمة الإنتاجية الإجمالية"
     group: "مجموعة"
     group_parameters: "معلمات مجموعة"
     groups: "المجموعات"
+    # gtin: "GTIN"
     guide: "دليل"
     harvest_year: "حصاد العام"
     has_downpayment: "لديه عربون واحد"
@@ -1531,6 +1540,7 @@ arb:
     intervention_parameter: "معلمة تدخل"
     intervention_product_parameters: "يلقي تدخل"
     interventions: "التدخلات"
+    # interventions_used_in: "Interventions used in"
     introduction: "المقدمة"
     inventories: "عمليات الجرد" #?
     inventory: "عملية الجرد"
@@ -1570,6 +1580,7 @@ arb:
     item_value: "قيمة البند"
     items: "بنود عقد الاستخراج"
     items_count: "عد البنود"
+    items_count_value: "البنود تحسب قيمة"
     journal: "الدفتر اليومي"
     journal_entries: "سجلات المحاسبة"
     journal_entry: "سجل المحاسبة"
@@ -1666,6 +1677,7 @@ arb:
     marketable_items_count: "البنود تسويق عد"
     marketable_net_mass: "الكتلة الصافية للتسويق"
     marketable_net_yield: "العائد الصافي للتسويق"
+    marketable_quantity: "كمية قابلة للتسويق"
     marketable_yield: "العائد للتسويق"
     mass: "الوزن"
     master: "كتلة رئيسية" #?
@@ -1858,6 +1870,7 @@ arb:
     polygon: "متناسقين" #?
     population: "عدد السكان"
     population_counting: "عد السكان"
+    populations: "السكان"
     position: "الوضع"
     post: "بريد"
     postal_code: "الكود البريدى"
@@ -1948,6 +1961,7 @@ arb:
     purchases_account: "رسوم المحاسبة" #?
     purchases_account_id: "رسوم المحاسبة" #?
     quantity: "الكمية"
+    quantity_gap_on_invoice_entry: "دخول الفجوة كمية الأسهم"
     quantity_handler: "كمية معالج"
     quantity_indicator: "مؤشر الكمية"
     quantity_indicator_name: "الكمية اسم المؤشر"
@@ -1957,6 +1971,7 @@ arb:
     quantity_unit: "وحدة الكمية"
     quantity_unit_name: "الكمية اسم الوحدة"
     quantity_value: "قيمة الكمية"
+    quantity_yield: "العائد الصافي للتسويق"
     query: "التساؤل"
     range: "فترة فاصلة" #?
     rank_number: "عدد رتبة"
@@ -2136,6 +2151,7 @@ arb:
     stock: "انتاج السهم" #?
     stock_account: "حساب الأسهم"
     stock_id: "انتاج سهم" #?
+    stock_movement_account: "حساب حركة الأسهم"
     stock_moves: "حركات الاسهم" #?
     stock_transfers: "تحويل او ضياع السهم" #?
     stockable: "ادارة الاسهم" #?
@@ -2226,6 +2242,7 @@ arb:
     tools: "الادوات"
     tools_list: "معدات" #?
     total_cost: "التكلفة الإجمالية"
+    total_items_count: "مجموع البنود عد"
     total_net_mass: "مجموع الكتلة الصافية"
     town_number: "عدد تاون"
     tracking: "الحصة"
@@ -2248,6 +2265,7 @@ arb:
     type: "النوع"
     # uid: "UID"
     unconfirmed_email: "البريد الإلكتروني غير مؤكد"
+    undelivered_invoice_entry: "دخول فاتورة غير المسلمة"
     undelivered_quantity: "يبقى للتسليم"
     unit: "الوحدة" #?
     unit_amount: "كمية وحدة"
@@ -2256,6 +2274,7 @@ arb:
     unit_name: "إسم الوحدة"
     unit_population: "السكان وحدة"
     unit_pretax_amount: "وحدة الكمية قبل الضريبة"
+    unit_pretax_stock_amount: "وحدة كمية الأسهم قبل خصم الضرائب"
     unit_quantity: "وحدة مساحة الكمية" #?
     units: "الوحدات" #?
     unlock_token: "فتح رمز"
@@ -2284,6 +2303,7 @@ arb:
     use_tactics: "استخدام تقنيات إدارة المحاصيل"
     used_for_affairs: "تستخدم للشؤون"
     used_for_gaps: "تستخدم لالثغرات"
+    # used_intervention_parameters: "Used intervention parameters"
     useful_items: "المواد المفيدة"
     user: "المستخدم"
     user_id: "المستخدم" #?
@@ -2648,10 +2668,15 @@ arb:
     incoming_payment_use:  #?
       bookkeep: "[%{resource}] %{mode} (%{payment_number}) وردت من %{attorney} ل %{client} (%{expense_number})" #?
     inspection:
-      items: "العناصر"
-      mass: "كتلة"
+      items: "العناصر" #?
+      items_count: "العناصر"
+      mass: "كتلة" #?
+      net_mass: "كتلة"
     intervention:
       # name: "%{intervention} #%{number}"
+    inventory:
+      # bookkeep: "Physical inventory - [%{resource}] %{number}"
+      # bookkeep_exchange: "Physical inventory - exchange [%{resource}] %{number}"
     inventory_item:  #?
       inventory: "عملية الجرد" #?
     issue:
@@ -2753,6 +2778,7 @@ arb:
     outgoing_payment_use:  #?
       bookkeep: "[%{resource}] %{mode} (%{payment_number}) وردت من %{attorney} ل %{supplier} (%{expense_number})" #?
     parcel:
+      # bookkeep: "[%{resource} %{mode} %{number}] %{entity}"
       state_machine:
         states:
           draft: "مسودة"
@@ -2761,6 +2787,7 @@ arb:
           ordered: "أمر"
           prepared: "أعدت"
           received: "تم الاستلام"
+      # undelivered_invoice: "Undelivered invoice [%{resource} %{mode} %{number}] %{entity}"
     product:
       informations:
         with_components: "%{product} (%{unit}) (ليس هناك من فترة استراحة)"
@@ -2852,8 +2879,10 @@ arb:
       unknown_use_of_product: "(يجب تحديد الغاية من المنتج (شراء او بيع او تأجير" #?
     purchase:
       bookkeep: "[%{resource} %{number}] %{products} لل %{supplier}"
+      # exchange_undelivered_invoice: "Undelivered invoice - exchange [%{resource} %{mode} %{number}] %{entity}"
       label: "%{supplier} الى %{address}"
       purchase: "Achat"
+      # quantity_gap_on_invoice: "Gap on stock quantity [%{resource} %{number}] from %{entity}"
       states:
         aborted: "أجهض"
         draft: "مشروع تقدير"
@@ -2874,6 +2903,7 @@ arb:
         public: "عامة"
     sale:
       # bookkeep: "[%{resource} %{number}] %{products} for %{client} (%{sale})"
+      # exchange_undelivered_invoice: "Undelivered invoice - exchange [%{resource} %{mode} %{number}] %{entity}"
       label:
         # aborted: "Aborted sale %{number}"
         # credit: "Sale credit %{number}"
@@ -2886,6 +2916,7 @@ arb:
         estimate: "التقدير" #?
         order: "طلب" #?
         sales_invoice: "فاتورة" #?
+      # quantity_gap_on_invoice: "Gap on stock quantity [%{resource} %{number}] from %{entity}"
       sale: "البيع %{number}"
       sales_conditions:
         downpayment: "دفعة مقدمة %{percent}% (soit %{amount}€) يجب ادخال لبدفعة على توقيع التقدير الحالي"

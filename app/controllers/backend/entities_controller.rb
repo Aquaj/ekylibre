@@ -19,11 +19,13 @@
 module Backend
   class EntitiesController < Backend::BaseController
     manage_restfully nature: "(params[:nature] == 'contact' ? :contact : :organization)".c,
+                     language: 'Preference[:language]'.c,
+                     country: 'Preference[:country]'.c,
                      active: true,
                      t3e: { nature: 'RECORD.nature.text'.c }
     manage_restfully_picture
 
-    unroll
+    unroll fill_in: :full_name
 
     autocomplete_for :title, :first_name, :last_name, :meeting_origin
 
@@ -301,5 +303,5 @@ module Backend
         end
       end
     end
-end
+  end
 end

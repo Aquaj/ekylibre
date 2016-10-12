@@ -216,6 +216,7 @@ module ActionController
           attributes = model.content_columns.map(&:name).map(&:to_sym).delete_if do |c|
             [:depth, :lft, :rgt].include?(c)
           end
+
           attributes += options.delete(:other_attributes) || []
           attributes = ('{' + attributes.map(&:to_sym).uniq.collect do |a|
                                 if file_columns[a]
@@ -501,7 +502,7 @@ module ActionController
           end
 
           code << "test '#{action} action"
-          code << "in #{mode}" if action != mode
+          code << " in #{mode}" if action != mode
           code << "' do\n"
           # code << "  puts '#{controller_path.to_s.yellow}##{action.to_s.red}'\n"
           code << test_code.dig

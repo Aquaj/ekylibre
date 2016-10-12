@@ -83,6 +83,7 @@ spa:
         # wrong_length: "%{attribute} is the wrong length (should be %{count} characters)"
       models:
         activity:
+          checked_off_with_inspections: "Inspecciones ya se han creado para esta actividad"
           checked_without_measures: "Al menos, un tipo de medida debe seleccionarse cuando se quieren inspecciones"
         bank_statement:
           no_cash_match_ofx: "No hay resultados para el número de cuenta bancaria que figura en el archivo de efectivo"
@@ -279,6 +280,7 @@ spa:
       product_nature_variant_reading: "Variante de la lectura tipo de producto"
       product_ownership: "Propiedad del producto"
       product_phase: "Fase Producto"
+      product_population: "Producto población"
       product_reading: "Producto de lectura"
       purchase: "Compra"
       purchase_item: "Artículo de la compra"
@@ -399,6 +401,7 @@ spa:
     by_default: "Por defecto"
     calibrations: "calibraciones"
     campaign: "Campaña"
+    campaigns: "Campañas"
     # canal: "Canal"
     cap_islet: "Islote Cap"
     cap_islets: "Islotes Cap"
@@ -435,6 +438,7 @@ spa:
     closed_on: "Cerrada el"
     clusters_work_number: "Funcionan los clústeres número"
     code: "Código"
+    codes: "Códigos"
     coefficient: "Coeficiente"
     collect_account: "Recoger cuenta"
     collected_taxes: "Los impuestos recaudados"
@@ -671,12 +675,17 @@ spa:
     grading_sizes_unit_name: "La clasificación tamaños nombre de la unidad"
     gradings: "gradaciones"
     gravity: "Gravedad"
-    gross_items: "recuento bruto"
-    gross_mass: "masa bruta"
+    gross_items: "recuento bruto" #?
+    gross_items_count: "Cuentan artículos brutas"
+    gross_items_count_yield: "Rendimiento bruto elemento"
+    gross_mass: "masa bruta" #?
+    gross_net_mass: "Masa bruta"
+    gross_net_mass_yield: "Rendimiento masa bruta"
     gross_yield_value: "Valor de rendimiento bruto"
     group: "Grupo"
     group_parameters: "Parámetros del grupo"
     groups: "Grupos"
+    # gtin: "GTIN"
     guide: "Guía"
     harvest_year: "Año de la cosecha"
     has_downpayment: "Tiene el pago inicial"
@@ -741,6 +750,7 @@ spa:
     intervention_parameter: "Parámetro de la intervención"
     intervention_product_parameters: "Moldes de intervención"
     interventions: "Intervenciones"
+    # interventions_used_in: "Interventions used in"
     introduction: "Introducción"
     inventory: "Inventario"
     invitation_accepted_at: "Invitación aceptada en"
@@ -771,6 +781,7 @@ spa:
     item_value: "Valor del ítem"
     items: "Elementos"
     items_count: "Los productos que cuentan"
+    items_count_value: "Los productos que cuentan valor"
     journal: "Diario"
     journal_entries: "Las entradas de diario"
     journal_entry: "Entrada de diario"
@@ -845,6 +856,7 @@ spa:
     marketable_items_count: "cuentan artículos negociables"
     marketable_net_mass: "masa neta comercializable"
     marketable_net_yield: "rendimiento neto comercializable"
+    marketable_quantity: "Cantidad comercializable"
     marketable_yield: "rendimiento comercial"
     mass: "Masa (kg)"
     # max_zoom: "Max zoom"
@@ -985,6 +997,7 @@ spa:
     points: "Puntos"
     population: "Población"
     population_counting: "Censar la población"
+    populations: "Poblaciones"
     position: "Posición"
     post: "Enviar"
     postal_code: "Código postal"
@@ -1053,6 +1066,7 @@ spa:
     purchased_on: "Comprado en"
     purchases: "Ordenes de compra"
     quantity: "Cantidad"
+    quantity_gap_on_invoice_entry: "La entrada de la brecha de la cantidad"
     quantity_handler: "Manejador Cantidad"
     quantity_indicator: "Indicador de cantidad"
     quantity_indicator_name: "Nombre del indicador de cantidad"
@@ -1060,6 +1074,7 @@ spa:
     quantity_unit: "Unidad Cantidad"
     quantity_unit_name: "Nombre de la unidad Cantidad"
     quantity_value: "Cantidad valor"
+    quantity_yield: "Rendimiento neto comercializable"
     query: "Consulta"
     rank_number: "Número de rango"
     read_at: "Lea por lo"
@@ -1195,6 +1210,7 @@ spa:
     state_label: "Estado"
     status: "Estado"
     stock_account: "De la cuenta"
+    stock_movement_account: "Cuenta el movimiento de la"
     stocks_categories: "Stocks categorías"
     stopped_at: "Se detuvo en"
     stopped_on: "Detenido en"
@@ -1256,6 +1272,7 @@ spa:
     tool: "Herramienta"
     tools: "Instrumentos"
     total_cost: "Coste total"
+    total_items_count: "Cuentan artículos totales"
     total_net_mass: "masa neta total"
     town_number: "Número ciudad"
     tracking: "Rastreo"
@@ -1273,12 +1290,14 @@ spa:
     type: "Tipo"
     # uid: "UID"
     unconfirmed_email: "Correo electrónico sin confirmar"
+    undelivered_invoice_entry: "El registro de facturas no entregado"
     undelivered_quantity: "Cantidad no entregada"
     unit_amount: "Importe unitario"
     unit_currency: "Moneda de la unidad"
     unit_name: "Nombre de la unidad"
     unit_population: "Unidad de población"
     unit_pretax_amount: "Cantidad antes de impuestos Unidad"
+    unit_pretax_stock_amount: "Unidad de cantidad de stock antes de impuestos"
     unlock_token: "Desbloquear contador"
     unlocked_payments: "Pagos desbloqueados"
     unpaid_sales: "Ventas no pagadas"
@@ -1300,6 +1319,7 @@ spa:
     use_tactics: "Usar cultivos técnica de gestión"
     used_for_affairs: "Se utiliza para asuntos"
     used_for_gaps: "Se utiliza para huecos"
+    # used_intervention_parameters: "Used intervention parameters"
     useful_items: "Artículos útiles"
     user: "Usuario"
     users: "Usuarios"
@@ -1413,10 +1433,15 @@ spa:
         transfer:
           name: "Virement"
     inspection:
-      items: "Artículos"
-      mass: "Masa"
+      items: "Artículos" #?
+      items_count: "Artículos"
+      mass: "Masa" #?
+      net_mass: "Masa"
     intervention:
       # name: "%{intervention} #%{number}"
+    inventory:
+      # bookkeep: "Physical inventory - [%{resource}] %{number}"
+      # bookkeep_exchange: "Physical inventory - exchange [%{resource}] %{number}"
     issue:
       # name_with_target: "%{nature} on %{target}"
       # name_without_target: "%{nature}"
@@ -1479,6 +1504,7 @@ spa:
         transfer:
           name: "Transferir"
     parcel:
+      # bookkeep: "[%{resource} %{mode} %{number}] %{entity}"
       state_machine:
         states:
           draft: "Borrador"
@@ -1487,6 +1513,7 @@ spa:
           ordered: "Ordenado"
           prepared: "Preparado"
           received: "Recibido"
+      # undelivered_invoice: "Undelivered invoice [%{resource} %{mode} %{number}] %{entity}"
     product:
       informations:
         # with_components: "%{product} (%{unit}) (transformed material)"
@@ -1517,8 +1544,10 @@ spa:
         sales: "Ventas"
     purchase:
       # bookkeep: "[%{resource} %{number}] %{products} of %{supplier}"
+      # exchange_undelivered_invoice: "Undelivered invoice - exchange [%{resource} %{mode} %{number}] %{entity}"
       # label: "%{supplier} at %{address}"
       purchase: "Compra"
+      # quantity_gap_on_invoice: "Gap on stock quantity [%{resource} %{number}] from %{entity}"
       states:
         aborted: "Abortado"
         draft: "Proyecto de previsiones"
@@ -1539,6 +1568,7 @@ spa:
         public: "Público"
     sale:
       # bookkeep: "[%{resource} %{number}] %{products} for %{client} (%{sale})"
+      # exchange_undelivered_invoice: "Undelivered invoice - exchange [%{resource} %{mode} %{number}] %{entity}"
       label:
         # aborted: "Aborted sale %{number}"
         # credit: "Sale credit %{number}"
@@ -1547,6 +1577,7 @@ spa:
         # invoice: "Sales invoice %{number}"
         # order: "Sales order %{number}"
         # refused: "Refused estimate %{number}"
+      # quantity_gap_on_invoice: "Gap on stock quantity [%{resource} %{number}] from %{entity}"
       # sale: "Sale %{number}"
       sales_conditions:
         # downpayment: "A downpayment of %{percentage}% (i.e. %{amount}) must be paid at the signature of this present estimate."

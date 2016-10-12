@@ -380,6 +380,7 @@
         <page to="backend/matters#list_groups"/>
         <page to="backend/matters#list_readings"/>
         <page to="backend/matters#list_intervention_product_parameters"/>
+        <page to="backend/matters#list_parcel_items"/>
         <page to="backend/matters#list_issues"/>
         <page to="backend/matters#list_members"/>
         <page to="backend/matters#list_places"/>
@@ -405,6 +406,7 @@
         <page to="backend/products#list_issues"/>
         <page to="backend/products#list_readings"/>
         <page to="backend/products#list_intervention_product_parameters"/>
+        <page to="backend/products#list_parcel_items"/>
         <page to="backend/products#list_members"/>
         <page to="backend/products#list_places"/>
         <page to="backend/products#list_carried_linkages"/>
@@ -424,6 +426,7 @@
         <page to="backend/product_groups#list_carrier_linkages"/>
         <page to="backend/product_groups#list_contained_products"/>
         <page to="backend/product_groups#list_inspections"/>
+        <page to="backend/product_groups#list_parcel_items"/>
         <page to="backend/product_groups#list_groups"/>
         <page to="backend/product_groups#list_readings"/>
         <page to="backend/product_groups#list_intervention_product_parameters"/>
@@ -436,6 +439,8 @@
         <page to="backend/product_groups#take"/>
         <page to="backend/product_groups#unroll"/>
         <page to="backend/product_groups#update"/>
+      </item>
+      <item name="trackings">
         <page to="backend/trackings#index"/>
         <page to="backend/trackings#create"/>
         <page to="backend/trackings#destroy"/>
@@ -528,7 +533,6 @@
         <page to="backend/parcels#give"/>
         <page to="backend/parcels#order"/>
         <page to="backend/parcels#prepare"/>
-        <page to="backend/parcel_items#new"/>
       </item>
       <item name="deliveries">
         <page to="backend/deliveries#index"/>
@@ -608,13 +612,6 @@
         <page to="backend/activity_seasons#show"/>
         <page to="backend/activity_seasons#unroll"/>
         <page to="backend/activity_seasons#update"/>
-        <page to="backend/activity_tactics#create"/>
-        <page to="backend/activity_tactics#destroy"/>
-        <page to="backend/activity_tactics#edit"/>
-        <page to="backend/activity_tactics#new"/>
-        <page to="backend/activity_tactics#show"/>
-        <page to="backend/activity_tactics#unroll"/>
-        <page to="backend/activity_tactics#update"/>
         <page to="backend/animals#index"/>
         <page to="backend/animals#add_to_group"/>
         <page to="backend/animals#add_to_container"/>
@@ -630,6 +627,7 @@
         <page to="backend/animals#show"/>
         <page to="backend/animals#update"/>
         <page to="backend/animals#picture"/>
+        <page to="backend/animals#list_parcel_items"/>
         <page to="backend/animals#list_contained_products"/>
         <page to="backend/animals#list_inspections"/>
         <page to="backend/animals#list_groups"/>
@@ -668,6 +666,7 @@
         <page to="backend/fungi#list_contained_products"/>
         <page to="backend/fungi#list_groups"/>
         <page to="backend/fungi#list_intervention_product_parameters"/>
+        <page to="backend/fungi#list_parcel_items"/>
         <page to="backend/fungi#list_issues"/>
         <page to="backend/fungi#list_members"/>
         <page to="backend/fungi#list_places"/>
@@ -689,6 +688,7 @@
         <page to="backend/manure_management_plans#unroll"/>
         <page to="backend/manure_management_plans#update"/>
         <page to="backend/target_distributions#index"/>
+        <page to="backend/target_distributions#create"/>
         <page to="backend/target_distributions#destroy"/>
         <page to="backend/target_distributions#edit_many"/>
         <page to="backend/target_distributions#edit"/>
@@ -709,8 +709,12 @@
         <page to="backend/interventions#new"/>
         <page to="backend/interventions#show"/>
         <page to="backend/interventions#update"/>
+        <page to="backend/interventions#change_state"/>
+        <page to="backend/interventions#modal"/>
         <page to="backend/interventions#list_product_parameters"/>
         <page to="backend/interventions#list_record_interventions"/>
+        <page to="backend/interventions#purchase"/>
+        <page to="backend/interventions#sell"/>
         <page to="backend/interventions#unroll"/>
         <page to="backend/crumbs#index"/>
         <page to="backend/crumbs#update"/>
@@ -763,6 +767,7 @@
         <page to="backend/inspections#create"/>
         <page to="backend/inspections#destroy"/>
         <page to="backend/inspections#edit"/>
+        <page to="backend/inspections#export"/>
         <page to="backend/inspections#list"/>
         <page to="backend/inspections#new"/>
         <page to="backend/inspections#show"/>
@@ -790,6 +795,7 @@
         <page to="backend/land_parcels#edit"/>
         <page to="backend/land_parcels#list"/>
         <page to="backend/land_parcels#list_carried_linkages"/>
+        <page to="backend/land_parcels#list_parcel_items"/>
         <page to="backend/land_parcels#list_carrier_linkages"/>
         <page to="backend/land_parcels#list_contained_products"/>
         <page to="backend/land_parcels#list_inspections"/>
@@ -817,6 +823,7 @@
         <page to="backend/plants#list_contained_products"/>
         <page to="backend/plants#list_inspections"/>
         <page to="backend/plants#list_groups"/>
+        <page to="backend/plants#list_parcel_items"/>
         <page to="backend/plants#list_readings"/>
         <page to="backend/plants#list_intervention_product_parameters"/>
         <page to="backend/plants#list_issues"/>
@@ -1326,6 +1333,7 @@
         <page to="backend/product_nature_variants#list"/>
         <page to="backend/product_nature_variants#new"/>
         <page to="backend/product_nature_variants#pick"/>
+        <page to="backend/product_nature_variants#picture"/>
         <page to="backend/product_nature_variants#quantifiers"/>
         <page to="backend/product_nature_variants#show"/>
         <page to="backend/product_nature_variants#update"/>
@@ -1377,6 +1385,7 @@
         <page to="backend/workers#list_readings"/>
         <page to="backend/workers#list_intervention_product_parameters"/>
         <page to="backend/workers#list_issues"/>
+        <page to="backend/workers#list_parcel_items"/>
         <page to="backend/workers#list_members"/>
         <page to="backend/workers#list_places"/>
         <page to="backend/workers#picture"/>
@@ -1395,6 +1404,7 @@
         <page to="backend/equipments#take"/>
         <page to="backend/equipments#unroll"/>
         <page to="backend/equipments#update"/>
+        <page to="backend/equipments#list_parcel_items"/>
         <page to="backend/equipments#list_contained_products"/>
         <page to="backend/equipments#list_inspections"/>
         <page to="backend/equipments#list_groups"/>
@@ -1422,6 +1432,7 @@
         <page to="backend/buildings#list_inspections"/>
         <page to="backend/buildings#list_groups"/>
         <page to="backend/buildings#list_issues"/>
+        <page to="backend/buildings#list_parcel_items"/>
         <page to="backend/buildings#list_readings"/>
         <page to="backend/buildings#list_intervention_product_parameters"/>
         <page to="backend/buildings#list_members"/>
@@ -1446,6 +1457,7 @@
         <page to="backend/building_divisions#list_groups"/>
         <page to="backend/building_divisions#list_issues"/>
         <page to="backend/building_divisions#list_readings"/>
+        <page to="backend/building_divisions#list_parcel_items"/>
         <page to="backend/building_divisions#list_intervention_product_parameters"/>
         <page to="backend/building_divisions#list_members"/>
         <page to="backend/building_divisions#list_places"/>
@@ -1464,7 +1476,19 @@
         <page to="backend/animal_groups#update"/>
         <page to="backend/animal_groups#list_animals"/>
         <page to="backend/animal_groups#list_places"/>
+        <page to="backend/animal_groups#list_carried_linkages"/>
+        <page to="backend/animal_groups#list_carrier_linkages"/>
+        <page to="backend/animal_groups#list_contained_products"/>
+        <page to="backend/animal_groups#list_groups"/>
+        <page to="backend/animal_groups#list_parcel_items"/>
+        <page to="backend/animal_groups#list_inspections"/>
+        <page to="backend/animal_groups#list_intervention_product_parameters"/>
+        <page to="backend/animal_groups#list_issues"/>
+        <page to="backend/animal_groups#list_members"/>
+        <page to="backend/animal_groups#list_readings"/>
         <page to="backend/animal_groups#unroll"/>
+        <page to="backend/animal_groups#picture"/>
+        <page to="backend/animal_groups#take"/>
       </item>
       <item name="settlements">
         <page to="backend/settlements#index"/>
@@ -1481,6 +1505,7 @@
         <page to="backend/settlements#list_intervention_product_parameters"/>
         <page to="backend/settlements#list_issues"/>
         <page to="backend/settlements#list_members"/>
+        <page to="backend/settlements#list_parcel_items"/>
         <page to="backend/settlements#list_places"/>
         <page to="backend/settlements#picture"/>
         <page to="backend/settlements#new"/>
@@ -1810,23 +1835,6 @@
     </group>
   </inaccessible-actions>
   <untreated-actions>
-    <group>
-      <item name="animal_groups">
-        <page to="backend/animal_groups#list_carried_linkages"/>
-        <page to="backend/animal_groups#list_carrier_linkages"/>
-        <page to="backend/animal_groups#list_contained_products"/>
-        <page to="backend/animal_groups#list_groups"/>
-        <page to="backend/animal_groups#list_inspections"/>
-        <page to="backend/animal_groups#list_intervention_product_parameters"/>
-        <page to="backend/animal_groups#list_issues"/>
-        <page to="backend/animal_groups#list_members"/>
-        <page to="backend/animal_groups#list_readings"/>
-        <page to="backend/animal_groups#picture"/>
-        <page to="backend/animal_groups#take"/>
-      </item>
-      <item name="target_distributions">
-        <page to="backend/target_distributions#create"/>
-      </item>
-    </group>
+    <group/>
   </untreated-actions>
 </navigation>

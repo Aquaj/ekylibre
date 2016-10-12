@@ -193,10 +193,11 @@ fra:
         taken: "%{attribute} a déjà été pris"
         too_long: "%{attribute} est trop long (%{count} caractères maximum)"
         too_short: "%{attribute} est trop court (%{count} caractères minimum)"
-        unitary_in_parcel: "articles Unitaires ne peuvent être envoyés un par un"
+        unitary_in_parcel: "Articles unitaires ne peuvent être envoyés un par un"
         wrong_length: "%{attribute} n’est pas d’une bon longueur (%{count} caractères)"
       models:
         activity:
+          checked_off_with_inspections: "Des agréages sont déjà présents pour cette activité"
           checked_without_measures: "Au moins un type de mesure doit être sélectionné lorsque l'utilisation des agréages est demandée"
         bank_statement:
           no_cash_match_ofx: "Aucune somme d’argent trouvée pour le numéro de compte bancaire donné dans le fichier"
@@ -394,6 +395,7 @@ fra:
       product_nature_variant_reading: "Valeur d’indicateur de variante"
       product_ownership: "Propriété de produit"
       product_phase: "Phase de produits"
+      product_population: "Population de produit"
       product_reading: "Valeur d’indicateur"
       production: "Production" #?
       purchase: "Achat"
@@ -533,6 +535,7 @@ fra:
     by_default: "Par défaut"
     calibrations: "Stock en terre par calibre"
     campaign: "Campagne"
+    campaigns: "Campagnes"
     canal: "Canal"
     cap_islet: "Ilot PAC"
     cap_islets: "Ilots PAC"
@@ -576,6 +579,7 @@ fra:
     closed_on: "Clôturé le"
     clusters_work_number: "Ilôts PAC"
     code: "Code"
+    # codes: "Codes"
     coefficient: "Coefficient"
     collect_account: "TVA collectée"
     collect_taxes: "TVA collectées" #?
@@ -861,12 +865,17 @@ fra:
     grading_sizes_unit_name: "Classement tailles nom de l’unité"
     gradings: "Agréages"
     gravity: "Gravité"
-    gross_items: "Nombre d'unités brut"
-    gross_mass: "Masse brute"
+    gross_items_count: "Nombre de pièces brut"
+    gross_items_count_percentage: "Pourcentage du nombre de pièces brut" #?
+    gross_items_count_yield: "Rendement brut (pièces)"
+    gross_net_mass: "Masse brute"
+    gross_net_mass_percentage: "Pourcentage de la masse brute" #?
+    gross_net_mass_yield: "Rendement brut (masse)"
     gross_yield_value: "Rendement brut"
     group: "Groupe"
     group_parameters: "Paramètres de groupe"
     groups: "Groupes"
+    # gtin: "GTIN"
     guide: "Référentiel"
     harvest_year: "Année de récolte"
     has_downpayment: "A un acompte"
@@ -934,6 +943,7 @@ fra:
     intervention_parameter: "Paramètre d’intervention"
     intervention_product_parameters: "Casting"
     interventions: "Interventions"
+    # interventions_used_in: "Interventions used in"
     introduction: "Introduction"
     inventory: "Inventaire"
     invitation_accepted_at: "Invitation acceptée à"
@@ -966,6 +976,7 @@ fra:
     item_value: "Valeur de l’élément"
     items: "Élements"
     items_count: "Nombre d’éléments"
+    items_count_value: "Articles comptent valeur"
     journal: "Journal"
     journal_entries: "Écritures"
     journal_entry: "Écriture"
@@ -1045,9 +1056,10 @@ fra:
     manure_management_plan_zones: "Zones de plan de fumure"
     markers: "Repères" #?
     marketable: "Commercialisable"
-    marketable_items_count: "Nombre d'unités commercialisables"
+    marketable_items_count: "Nombre de pièces commercialisables"
     marketable_net_mass: "Masse nette commercialisable"
     marketable_net_yield: "Rendement net commercialisable"
+    marketable_quantity: "Quantité commercialisable"
     marketable_yield: "Rendement commercialisable"
     mass: "Poids (kg)"
     max_zoom: "Zoom maximal"
@@ -1201,6 +1213,7 @@ fra:
     points: "Points"
     population: "Population"
     population_counting: "Gestion quantitative"
+    # populations: "Populations"
     position: "Position"
     post: "Poste"
     postal_code: "Code postal"
@@ -1295,6 +1308,7 @@ fra:
     purchases: "Achats"
     quality_criterion: "Critère qualité" #?
     quantity: "Quantité"
+    quantity_gap_on_invoice_entry: "Ecriture d'ecart de quantité de stock"
     quantity_handler: "Macro-unité Quantité"
     quantity_indicator: "Indicateur Quantité"
     quantity_indicator_name: "Quantité nom de l’indicateur"
@@ -1302,6 +1316,7 @@ fra:
     quantity_unit: "Unité de quantité"
     quantity_unit_name: "Quantité nom de l’unité"
     quantity_value: "Valeur Quantité"
+    quantity_yield: "Rendement commercialisable net"
     query: "Requête"
     rank_number: "Numéro de Rang"
     read_at: "Mesuré à"
@@ -1449,6 +1464,7 @@ fra:
     static_support: "Support statique" #?
     status: "Statut"
     stock_account: "Compte de stock"
+    stock_movement_account: "Compte mouvement de stock"
     stocks_categories: "Catégories de produits avec stock"
     stopped_at: "Arrêté le"
     stopped_on: "Arrêté le"
@@ -1515,6 +1531,7 @@ fra:
     tool: "Outil"
     tools: "Outils"
     total_cost: "Coût total"
+    total_items_count: "Nombre total d'éléments"
     total_net_mass: "Masse nette totale"
     town_number: "Numéro de commune"
     tracking: "Lot"
@@ -1534,6 +1551,7 @@ fra:
     type: "Type"
     # uid: "UID"
     unconfirmed_email: "E-mail non confirmé"
+    undelivered_invoice_entry: "Ecriture Facture non parvenue (FNP)"
     undelivered_quantity: "Reste à livrer"
     unit: "Unité" #?
     unit_amount: "PU TTC"
@@ -1541,6 +1559,7 @@ fra:
     unit_name: "Unité"
     unit_population: "Population de l’unité"
     unit_pretax_amount: "PU HT"
+    unit_pretax_stock_amount: "Unité stocks avant impôts montant"
     unit_price: "Prix unitaire" #?
     unlock_token: "Jeton de déverrouillage"
     unlocked_payments: "Paiement non verrouillés"
@@ -1562,6 +1581,7 @@ fra:
     use_tactics: "Utiliser les itinéraires techniques"
     used_for_affairs: "Utilisé pour les affaires"
     used_for_gaps: "Utilisé pour les écarts"
+    # used_intervention_parameters: "Used intervention parameters"
     useful_items: "Lignes utiles"
     user: "Utilisateur"
     users: "Utilisateurs"
@@ -1684,10 +1704,14 @@ fra:
         transfer:
           name: "Virement"
     inspection:
-      items: "Nombre de pièces"
-      mass: "Masse"
+      items_count: "Nombre de pièces"
+      net_mass: "Masse"
     intervention:
+      bookkeep: "[%{resource}] %{name}" #?
       name: "%{intervention} n°%{number}"
+    inventory:
+      bookkeep: "Inventaire physique - [%{resource}] %{number}"
+      bookkeep_exchange: "Inventaire physique - extourne [%{resource}] %{number}"
     issue:
       name_with_target: "%{nature} sur %{target}"
       name_without_target: "%{nature}"
@@ -1755,6 +1779,7 @@ fra:
         transfer:
           name: "Virement"
     parcel:
+      bookkeep: "[%{resource} %{mode} %{number}] %{entity}"
       state_machine:
         states:
           draft: "Brouillon"
@@ -1763,6 +1788,7 @@ fra:
           ordered: "Commandé"
           prepared: "Prêt"
           received: "Reçu"
+      undelivered_invoice: "Facture non parvenue [%{resource} %{mode} %{number}] %{entity}"
     product:
       informations:
         with_components: "%{product} (%{unit}) (produit transformé)"
@@ -1793,8 +1819,10 @@ fra:
         sales: "Vente"
     purchase:
       bookkeep: "[%{resource} %{number}] %{products} de %{supplier}"
+      exchange_undelivered_invoice: "Facture non parvenue - extourne [%{resource} %{mode} %{number}] %{entity}"
       label: "%{supplier} à %{address}"
       purchase: "Achat"
+      quantity_gap_on_invoice: "Ecart de stock en quantité [%{resource} %{number}] de %{entity}"
       states:
         aborted: "Abandonné"
         draft: "Devis brouillon"
@@ -1815,6 +1843,7 @@ fra:
         public: "Public"
     sale:
       bookkeep: "[%{resource} %{number}] %{products} pour %{client} (%{sale})"
+      exchange_undelivered_invoice: "Facture non parvenue - extourne [%{resource} %{mode} %{number}] %{entity}"
       label:
         aborted: "Vente abandonnée %{number}"
         credit: "Avoir %{number}"
@@ -1823,6 +1852,7 @@ fra:
         invoice: "Facture %{number}"
         order: "Commande %{number}"
         refused: "Devis refusé %{number}"
+      quantity_gap_on_invoice: "Ecart de stock en quantité [%{resource} %{number}] de %{entity}"
       sale: "Vente %{number}"
       sales_conditions:
         downpayment: "Un acompte de %{percentage}% (soit %{amount}) devra être versé à la signature du présent devis."

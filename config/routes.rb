@@ -46,6 +46,7 @@ Rails.application.routes.draw do
       get :list_issues
       get :list_readings
       get :list_members
+      get :list_parcel_items
       get :list_places
       get :take
     end
@@ -219,7 +220,6 @@ Rails.application.routes.draw do
     end
 
     resources :activity_seasons, concerns: [:unroll]
-    resources :activity_tactics, concerns: [:unroll], except: [:index]
 
     resources :affairs, concerns: [:list, :affairs], only: [:show, :index]
 
@@ -524,8 +524,12 @@ Rails.application.routes.draw do
     resources :interventions, concerns: [:list, :unroll] do
       collection do
         patch :compute
+        get :modal
+        post :change_state
       end
       member do
+        post :sell
+        post :purchase
         get :list_product_parameters
         get :list_record_interventions
       end
@@ -670,8 +674,6 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :parcel_items, only: [:new], path: 'parcel-items'
-
     resources :plant_density_abaci, concerns: [:list], path: 'plant-density-abaci'
 
     resources :plants, concerns: :products
@@ -686,7 +688,11 @@ Rails.application.routes.draw do
 
     resources :products, concerns: [:products]
 
-    resources :inspections, concerns: [:list, :unroll]
+    resources :inspections, concerns: [:list, :unroll] do
+      member do
+        get :export, defaults: { format: 'ods' }
+      end
+    end
 
     resources :product_groups, concerns: :products
 
